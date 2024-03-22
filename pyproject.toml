@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pypackage"
+version = "0.0.0"
+description = ""
+authors = ["shankarlohar <shankarloharmail@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.6.2"
+
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "0.0.0"
+version_scheme = "pep440"
+version_provider = "poetry"
+update_changelog_on_bump = true
+major_version_zero = true
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
